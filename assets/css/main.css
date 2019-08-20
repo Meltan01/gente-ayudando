@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
 
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, .logo, .alia, .logotipo, cite, code, picture, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, .logo, .image-fit, .alia, .logotipo, cite, code, picture, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -1650,6 +1650,7 @@
 		line-height: 1.5em;
 		text-align: left;
 		text-shadow: 1px 1px 3px #444444;
+		padding: 1em 0;
 	}
 
 	h4 {color: #181920;
@@ -2139,10 +2140,12 @@
 	}
 
 	header p {
-		color: #682fd1;
-		position: relative;
+		color: #272833;
+		position: left;
 		z-index: inherit;
 		margin: 0 0 1.5em 0;
+		text-shadow: 2px 2px 5px #444444;
+
 	}
 
 	header h2 + p {
@@ -2152,7 +2155,7 @@
 	}
 
 	header h3 + p {
-		font-size: 1.1em;
+		font-size: 0.5em;
 		margin-top: -0.8em;
 		line-height: 1.75em;
 	}
@@ -2914,7 +2917,7 @@
 
 	.spotlight {
 		background-attachment: fixed;
-		background-position: center center;
+		background-position: 0%;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
 		height: 90vh;
@@ -3003,7 +3006,6 @@
 		}
 
 		.spotlight:before {
-			background-image: url("images/slide2.jpg");
 			content: '';
 			display: block;
 			height: 100%;
@@ -3545,11 +3547,15 @@
 			width: 100%;
 		}
 		.alia{
-			width: 350px;
+			width: auto;
 			padding: 0em 6em 0;
+			height: fit-content;
 		}
 		.logotipo{
 			width: 20%;
+			height: auto;
+			padding: 0 0 0 3em;
+			align-content: center;
 		}
 
 }
@@ -3686,8 +3692,9 @@
 			}
 
 			.alia{
-				width: 280px;
+				width: auto;
 				padding: 0em 6em 0;
+				height: fit-content;
 			}
 			.logotipo{
 				width: 20%;
@@ -3834,11 +3841,15 @@
 				padding: 0 0 0 1em;
 			}
 			.alia{
-				width: 280px;
+				width: auto;
 				padding: 0em 6em 0;
+				height: fit-content;
 			}
 			.logotipo{
-				width: 50%;
+				width: 45%;
+				height: auto;
+				padding: 0;
+				align-content: center;
 			}
 		/* Section/Article */
 
@@ -3851,7 +3862,10 @@
 			}
 
 			header h3 + p {
-				font-size: 1em;
+				font-size: 0.6em;
+                padding: 0 9em 0 0;
+                text-align: left;
+				
 			}
 
 			header h4 + p,
@@ -4125,12 +4139,12 @@
 			}
 
 		    h1{ 
-			padding: 2em 2em 1em 2em;
-			text-align: justify;
+			padding: 5em 2em 1em 2em;
+			text-align: left;
 			
 		}  
 		img{
-			padding: 0.5em 2.3em 0.5em 0;
+			padding: 0.5em 1.2em 0.5em 0;
 			width: 100%;
 		}
 		h3{
@@ -4140,22 +4154,35 @@
 			padding: 2em;
 
 		}
+		.image-fit{
+			padding: 0.5em 1.2em 0.5em 0;
+
+		}
 		.alia{
-			width: 300px;
-			padding: 0em 6em 0;
+			width: auto;
+			padding: 0em 6em 0 6.5em;
+			height: fit-content;
 		}
 		h6{
 			text-align: center;
 			padding: 0 0 0 0.8em;
+			font-size: 1em;
 		}
 		p {
-			font-size: 1.3em;
+			font-size: 1em;
 			text-align: justify;
 			letter-spacing: 1px;
 			padding: 0.1em;
 		}
 		.logotipo{
-			width: 60%;
+			width: 150px;
+			height: auto;
+		}
+		header h3 + p {
+			font-size: 0.6em;
+			padding: 0 6em 0 0;
+			text-align: left;
+
 		}
 
 
