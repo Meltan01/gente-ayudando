@@ -1609,7 +1609,7 @@
 		margin: 0 0 0 0;
 		font-weight: normal;
 		text-align: justify;
-	}+
+	}
 	.slidetext{
 		color: #444444;
 		margin: 0 0 0 0;
@@ -4146,7 +4146,7 @@
 				transform: translateX(0);
 			}
 			img{
-				padding: 0.5em 1.2em 0.5em 0;
+				padding: 0.5em 2.22em 0.5em 0.3em;
 					width: 60%;
 			}
 
@@ -4173,7 +4173,7 @@
 			
 		}  
 		img{
-			padding: 0.5em 1.2em 0.5em 0;
+			padding: 0.5em 2.22em 0.5em 0.3em;
 			width: 100%;
 		}
 		h3{
