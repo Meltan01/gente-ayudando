@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
 
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, .logo, .image-fit, .alia, .logotipo, cite, code, picture, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, .logo, .image-fit, .alia, .logotipo, .two-resp, cite, code, picture, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -1609,6 +1609,12 @@
 		margin: 0 0 0 0;
 		font-weight: normal;
 		text-align: justify;
+	}+
+	.slidetext{
+		color: #444444;
+		margin: 0 0 0 0;
+		font-weight: normal;
+		text-align: justify;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -1630,7 +1636,6 @@
 		letter-spacing: 0;
 		font-weight: bold;
 		text-align: justify;
-		text-shadow: 0.1em 0.1em 0.1em #444444;
 		margin: 2em;
 		padding: 3em 0 0 3em;
 	}	
@@ -1649,7 +1654,6 @@
 		font-size: 0.5em;
 		line-height: 1.5em;
 		text-align: left;
-		text-shadow: 1px 1px 3px #444444;
 		padding: 1em 0;
 	}
 
@@ -1657,7 +1661,7 @@
 		font-size: 0.5em;
 		line-height: 1.5em;
 		text-align: center;
-		text-shadow: 1px 1px 3px #444444;
+		
 	}
 
 	h5 {
@@ -1665,7 +1669,7 @@
 		font-size: 1.8em;
 		line-height: 1.5em;
 		font-weight: 600;
-		text-shadow: 1px 1px 3px #444444;
+		
 	}
 
 	h6 {
@@ -2145,8 +2149,8 @@
 		position: left;
 		z-index: inherit;
 		margin: 0 0 1.5em 0;
-		text-shadow: 2px 2px 5px #444444;
-
+		
+	
 	}
 
 	header h2 + p {
@@ -2156,7 +2160,7 @@
 	}
 
 	header h3 + p {
-		font-size: 0.5em;
+		font-size: 0.325em;
 		margin-top: -0.8em;
 		line-height: 1.75em;
 	}
@@ -2514,7 +2518,7 @@
 	}
 
 		.image:before {
-			content: '';
+			content: url"(../../images/logo.jpg)";
 			display: block;
 			position: absolute;
 			left: 0;
@@ -3413,6 +3417,8 @@
 		text-align: left;
 		z-index: 21;
 		margin: -08em;
+		height: auto;
+		width: auto;
 	}
 
 		#banner:before {
@@ -3538,7 +3544,7 @@
 				}
 
 /* XLarge */
-    @media screen and (max-width: 2180px) {
+    @media screen and (max-width: 2580px) {
 		.logo{
 			width: 15%;
 			padding: 0 0 0 1em;
@@ -3557,6 +3563,21 @@
 			height: auto;
 			padding: 0 0 0 3em;
 			align-content: center;
+		}
+		.banner {
+			background-attachment: fixed;
+			background-color: #272833;
+			background-image: url("../../images/slide2.jpg");
+			background-position: center;
+			background-size: 110em 40em;
+			box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+			min-height: 100vh;
+			position: center;
+			text-align: left;
+			z-index: 21;
+			margin: -08em;
+			height: auto;
+			width: auto;
 		}
 
 }
@@ -3608,6 +3629,12 @@
 			}
 			.logotipo{
 				width: 20%;
+			}
+
+			.two-resp {
+				display: none;
+				width: 0%;
+				height: 0%;
 			}
 
 			
@@ -3980,6 +4007,7 @@
 					height: 44px;
 					line-height: 44px;
 					text-align: center;
+					display: none;
 				}
 
 					#titleBar .title a {
@@ -4157,6 +4185,7 @@
 		}
 		.image-fit{
 			padding: 0.5em 1.2em 0.5em 0;
+			contain: initial;
 
 		}
 		.alia{
