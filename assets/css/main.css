@@ -3890,10 +3890,9 @@
 			}
 
 			header h3 + p {
-				font-size: 0.6em;
-                padding: 0 9em 0 0;
-                text-align: left;
-				
+				font-size: 0.325em;
+				margin-top: -0.8em;
+				line-height: 1.75em;
 			}
 
 			header h4 + p,
@@ -4209,8 +4208,8 @@
 			height: auto;
 		}
 		header h3 + p {
-			font-size: 0.6em;
-			padding: 0 6em 0 0;
+			font-size: 0.4em;
+			padding: 0 9em 0 0;
 			text-align: left;
 
 		}
