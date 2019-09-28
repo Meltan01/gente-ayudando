@@ -3410,14 +3410,15 @@
 		background-attachment: fixed;
 		background-image: url("../../images/slide2.jpg");
 		background-size: cover;
+		background-position: center;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
 		min-height: 100vh;
 		text-align: left;
 		z-index: 21;
 		margin: -05em;
 		height: 100%;
-      object-fit: cover;
-      object-position: center center;
+        object-fit: cover;
+        object-position: center center;
 	}
 
 		#banner .content {
@@ -3825,7 +3826,7 @@
 			h1{
 				font-size: 2.0em;
 				text-align: justify;
-				padding: 4.5em 0em 0 3em;
+				padding: 6em 0em 0 2em;
 			}
 
 			h2 {
@@ -4147,7 +4148,7 @@
 			}
 
 		    h1{ 
-			padding: 5em 2em 1em 2em;
+			padding: 6.4em 2em 1em 1.8em;
 			text-align: left;
 			
 		}  
@@ -4189,10 +4190,11 @@
 		}
 		header h3 + p {
 			font-size: 0.4em;
-			padding: 0 9em 0 0;
+			padding: 2em 0 0 0;
 			text-align: left;
 
 		}
+		
 
 
 		/* List */
